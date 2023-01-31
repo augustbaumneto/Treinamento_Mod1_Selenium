@@ -1,5 +1,7 @@
 HELP.md
 target/
+target/classes/META-INF/maven/br.com.inmetrics/treinamentoINMSelenium
+target/classes/META-INF/maven/br.com.inmetrics/treinamentoINMSelenium/pom.properties
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**

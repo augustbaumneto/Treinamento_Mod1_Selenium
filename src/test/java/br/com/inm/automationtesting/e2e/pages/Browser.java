@@ -13,10 +13,10 @@ import org.openqa.selenium.WebDriver;
  */
 public class Browser {
 
-	private WebDriver driver;
+	public WebDriver driver;
 
 	//Tempo de timout para criar o webbrowser
-	private static final long TIMEOUT = 10;
+	public static final long TIMEOUT = 10;
 	
 	/**
 	 * 
@@ -26,6 +26,7 @@ public class Browser {
 	public Browser() {
 		this.driver = new BrowserFactory().createWebDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMEOUT));
+		driver.manage().window().maximize();
 	}
 
 	protected WebDriver getDriver() {

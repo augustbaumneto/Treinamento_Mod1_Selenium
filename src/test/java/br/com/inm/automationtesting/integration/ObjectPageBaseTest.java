@@ -15,6 +15,8 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import br.com.inm.automationtesting.e2e.pages.ObjectPageBase;
 
+//TODO testes unitários
+
 /**
  * 
  * Classe para testar os testes unitários e de integração da classe ObjectPageBase
@@ -24,11 +26,11 @@ import br.com.inm.automationtesting.e2e.pages.ObjectPageBase;
  */
 public class ObjectPageBaseTest {
 
-	private ObjectPageBase opb;
+	public ObjectPageBase opb;
 	
-	private WebDriver driver; 
+	public WebDriver driver; 
 	
-	private static final String URLOK = "https://www.google.com/";
+	public static final String URLOK = "https://www.google.com/";
 	
 	/**
 	 * 

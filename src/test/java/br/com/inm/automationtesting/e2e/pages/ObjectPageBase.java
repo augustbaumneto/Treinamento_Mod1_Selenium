@@ -11,15 +11,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * 
- * Classe base dos page objcts. Possui construtor e métodos comuns das páginas
+ * Classe base dos page objects. Possui construtor e métodos comuns das páginas
  * 
  * @author August Neto
  *
  */
 public class ObjectPageBase {
 
-	private static final long TEMPO_ESPERA = 10;
-	private static final long TEMPO_ESPERA_URL = 10;
+	public static final long TEMPO_ESPERA = 10;
+	public static final long TEMPO_ESPERA_URL = 10;
 
 	protected static final String MENUID_MY_ACCOUNT = "menu-item-50";
 	
@@ -82,5 +82,5 @@ public class ObjectPageBase {
 		}
 
 	}
-
+	
 }

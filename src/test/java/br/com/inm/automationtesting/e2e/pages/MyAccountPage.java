@@ -14,7 +14,9 @@ import org.openqa.selenium.WebDriver;
  */
 public class MyAccountPage extends ObjectPageBase {
 
-	private static final String URL_PAG_MINHACONTA = "https://practice.automationtesting.in/my-account/";
+	public static final String URL_PAG_MINHACONTA = "https://practice.automationtesting.in/my-account/";
+	
+	public static final String ID_CAMPO_USERNAME_LOGIN = "username";
 
 	/**
 	 * Construtor padrão

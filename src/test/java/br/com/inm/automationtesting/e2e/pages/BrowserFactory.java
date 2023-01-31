@@ -16,7 +16,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class BrowserFactory {
 
 	// Constante da escolha do navegador pode assumir: chrome, firefox ou htmlunit
-	private static final String NAVEGADOR = "chrome";
+	public static final String NAVEGADOR = "chrome";
 	
 
 	/**
@@ -45,7 +45,7 @@ public class BrowserFactory {
 	 * 
 	 * @return Webdriver Chrome.
 	 */
-	private  WebDriver initChromeDriver() {
+	public  WebDriver initChromeDriver() {
 
 		return new ChromeDriver();
 	}
@@ -57,7 +57,7 @@ public class BrowserFactory {
 	 * @return Webdriver Firefox.
 	 */
 	
-	private  WebDriver initFirefoxDriver() {
+	public  WebDriver initFirefoxDriver() {
 
 		return new FirefoxDriver();
 	}

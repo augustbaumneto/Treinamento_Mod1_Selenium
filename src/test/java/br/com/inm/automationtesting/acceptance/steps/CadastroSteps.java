@@ -32,9 +32,9 @@ augustbaumneto
  */
 public class CadastroSteps {
 
-	private Browser navegador;
-	private InicialPage paginainicial;
-	private MyAccountPage paginaminhaconta;
+	public Browser navegador;
+	public InicialPage paginainicial;
+	public MyAccountPage paginaminhaconta;
 
 	@Dado("que estou no site automation testing")
 	public void que_estou_no_site_automation_testing() {
@@ -70,8 +70,9 @@ public class CadastroSteps {
 	@Entao("deve-se permanecer na mesma pagina my account")
 	public void deve_se_permanecer_na_mesma_pagina_my_account() {
 		assertFalse(paginainicial.ePaginaInicial());
+		
 		assertTrue(paginaminhaconta.ePaginaMinhaConta());
-		//navegador.clean();
+		navegador.clean();
 	}
 
 }
