@@ -2,6 +2,7 @@ package br.com.inm.automationtesting.e2e.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
@@ -47,7 +48,14 @@ public class BrowserFactory {
 	 */
 	public  WebDriver initChromeDriver() {
 
-		return new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		//Permitir acesso remoto no Chrome
+		options.addArguments("--remote-allow-origins=*");
+		
+		//Se a execução será headless
+		options.setHeadless(false);
+		return new ChromeDriver(options);
+
 	}
 
 	/**
